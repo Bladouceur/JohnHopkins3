@@ -1,0 +1,27 @@
+# Introduction
+The script called run_analysis.R performs the required 5 steps to complete the assessment. The five steps are:
+
+## Deliverables
+1. Merges the training and the test sets to create one data set.
+1. Extracts only the measurements on the mean and standard deviation for each measurement.
+1. Uses descriptive activity names to name the activities in the data set
+1. Appropriately labels the data set with descriptive variable names.
+1. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
+1. The end result is shown in the file tidy.txt.
+
+## Sequence
+1. Merge the datasets with rbind;
+1. Then select the columns related to mean and standard deviation;
+1. Relabel activities from numbers to values that can be understood, in order to respect tidy principles;
+1. Touch column names; and
+1. Create the new dataset, as required in the deliverables.
+
+
+## Variables
+1. *X_train*, *y_train*, *X_test*, *y_test*, *subject_train* and *subject_test* contain the data from the downloaded files.
+1. *x_all*, *y_all* and *subject_all* merge the previous datasets to further analysis.
+1. *features* contains the correct names for the *x_all* dataset, which are applied to the column names that are in *features_mean_std*, a numeric vector used to get the data data.
+1. A similar approach is taken with activity names through the *activity_labels* variable.
+1. *x_extract* contains a table with the features selected
+1. *all_data merges* *x_all*, *y_all* and *subject_all* in a single dataset.
+Finally, *tidy* has the  averages which will be later stored in a .txt file. The plyr package was used to wrap everything together. Thank you. 
