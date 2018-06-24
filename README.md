@@ -2,7 +2,7 @@
 This submission was done as a requirement for the John Hopkins Data Science Track, Course 3.  
 
 ## Content
-
+The requirements from the class are as follow:
 1. Merges the training and the test sets to create one data set.
 1. Extracts only the measurements on the mean and standard deviation for each measurement.
 1. Uses descriptive activity names to name the activities in the data set
